@@ -59,8 +59,11 @@
             this.ClientSize = new System.Drawing.Size(957, 502);
             this.Controls.Add(this.ustekolku);
             this.Controls.Add(this.lblHp);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.RightToLeftLayout = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);

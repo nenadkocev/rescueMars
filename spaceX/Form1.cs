@@ -55,6 +55,7 @@ namespace spaceX
         {
             timer.Stop();
             multipleKeysDown.Stop();
+            lblHp.Text = "DEAD";
             MessageBoxButtons buttons = MessageBoxButtons.YesNo;
             var result = MessageBox.Show("Дали сакате нова игра?", "Game Over", buttons);
             if (result == DialogResult.No)

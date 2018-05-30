@@ -32,6 +32,7 @@ namespace spaceX
         {
             if(i == 4)
             {
+                btnUpatstvo.Visible = true;
                 button1.Text = "Play";
                 button1.BackColor = Color.Red;
             }
@@ -41,6 +42,11 @@ namespace spaceX
             }
             string name = "i" + (++i);
             pictureBox2.Image = (Image)resourceManager.GetObject(name);
+        }
+
+        private void btnUpatstvo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Авионот се движи на стрелките LEFT, RIGHT, UP и DOWN. За пукање се користи CTRL. Обиди се да ги избегнеш Астероидите.");
         }
     }
 }

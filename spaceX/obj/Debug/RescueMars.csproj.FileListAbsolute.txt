@@ -53,3 +53,7 @@ C:\Users\Nenad\Desktop\final\spaceX\obj\Debug\RescueMars.csproj.GenerateResource
 C:\Users\Nenad\Desktop\final\spaceX\obj\Debug\RescueMars.csproj.CoreCompileInputs.cache
 C:\Users\Nenad\Desktop\final\spaceX\obj\Debug\spaceX.exe
 C:\Users\Nenad\Desktop\final\spaceX\obj\Debug\spaceX.pdb
+C:\Users\Nenad\Desktop\final\spaceX\bin\Debug\spaceX.exe.manifest
+C:\Users\Nenad\Desktop\final\spaceX\bin\Debug\spaceX.application
+C:\Users\Nenad\Desktop\final\spaceX\obj\Debug\spaceX.exe.manifest
+C:\Users\Nenad\Desktop\final\spaceX\obj\Debug\spaceX.application

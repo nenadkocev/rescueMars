@@ -30,6 +30,7 @@
         {
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnUpatstvo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,11 +53,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnUpatstvo
+            // 
+            this.btnUpatstvo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpatstvo.Location = new System.Drawing.Point(417, 429);
+            this.btnUpatstvo.Name = "btnUpatstvo";
+            this.btnUpatstvo.Size = new System.Drawing.Size(164, 51);
+            this.btnUpatstvo.TabIndex = 4;
+            this.btnUpatstvo.Text = "How to play";
+            this.btnUpatstvo.UseVisualStyleBackColor = true;
+            this.btnUpatstvo.Visible = false;
+            this.btnUpatstvo.Click += new System.EventHandler(this.btnUpatstvo_Click);
+            // 
             // Intro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(602, 492);
+            this.Controls.Add(this.btnUpatstvo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
             this.Name = "Intro";
@@ -71,5 +85,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnUpatstvo;
     }
 }
