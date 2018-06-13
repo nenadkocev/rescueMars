@@ -12,10 +12,12 @@ namespace spaceX
 {
     public partial class Form1 : Form
     {
+        public enum Level { Easy, Medium, Hard };
         Game game;
         bool up, down, left, right, fire;
         long elapsedTime;
         Timer timer, multipleKeysDown, credits;
+        Level level;
 
         Graphics canvas;
         int marsX, marsY;
@@ -33,8 +35,9 @@ namespace spaceX
 
             Intro intro = new Intro();
             intro.ShowDialog();
+            level = intro.getLevel();
 
-            game = new Game(this.Width, this.Height);
+            game = new Game(this.Width, this.Height, level);
             elapsedTime = 0;
 
             timer = new Timer();
@@ -70,7 +73,7 @@ namespace spaceX
         {
             marsY = -800;
             elapsedTime = 0;
-            game = new Game(this.Width, this.Height);
+            game = new Game(this.Width, this.Height, level);
             up = down = left = right = fire = false;
             timer.Start();
             multipleKeysDown.Start();
@@ -111,13 +114,15 @@ namespace spaceX
                 win();
             }
             if (elapsedTime % 50 == 0)
-                game.addAsteroid();
-            if (elapsedTime % 4 == 0)
-                game.rotateRocks();
-            if (elapsedTime % 50 == 0)
+            {
                 game.addBadGuy();
-            if (elapsedTime % 5 == 0)
+                game.addAsteroid();
+            }
+            if (elapsedTime % 4 == 0)
+            {
+                game.rotateRocks();
                 game.fireBadGuys();
+            }
             lblHp.Text = String.Format("HP: {0}", game.goodGuy.Health);
             
             elapsedTime += 1;

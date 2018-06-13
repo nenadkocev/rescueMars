@@ -391,5 +391,8 @@
   <ItemGroup>
     <None Include="Resources\i5.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spiral_galaxy_star_background.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

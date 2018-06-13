@@ -31,16 +31,22 @@ namespace spaceX
         public static string[] namesOfWeapons = { "slabo", "jako", "najjako" };
         public static int[] firePower = { 10, 20, 30 };
         public static int[] fireSpeed = { 35, 40, 45 };
-        public static int[] speed = { 11, 9, 7 };
+        public static int[] speedMedium = { 15, 13, 11 };
+        public static int[] speedHard = { 19, 17, 15 };
+        public static int[] speed = { 13, 11, 9 };
         public static int[] health = { 100, 150, 200 };
 
-        public Game(int width, int heigth)
+        public Game(int width, int heigth, spaceX.Form1.Level level)
         {
             random = new Random();
             this.width = width;
             this.heigth = heigth;
             Bitmap bitmap = new Bitmap(Properties.Resources.G_10);
             goodGuy = new Goodguy(width / 2, heigth - 130, 150, 5, "laser_20", bitmap, 15, 30);
+            if (level == spaceX.Form1.Level.Medium)
+                speed = speedMedium;
+            else if (level == spaceX.Form1.Level.Hard)
+                speed = speedHard;
 
             explosions = new List<Explosion>();
             rocks = new List<Asteroid>();
