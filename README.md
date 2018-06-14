@@ -73,7 +73,10 @@
         }
 ```
   Оваа функција прима објект од типот Ray и проверува дали тој објект се преклопува со леталото. Доколку се преклопува се ажурираат Health атрибутот на леталото и атрибутот за функционалност на леталото. 
+  
   4. Screenshots од играта
 ![screenshot_1](https://user-images.githubusercontent.com/32780138/41423720-5ecef66c-6ffc-11e8-8eca-22f3e7fc04e4.png)
+Успешно завршување на играта
+![screenshot_3](https://user-images.githubusercontent.com/32780138/41423947-f67d7d30-6ffc-11e8-9283-29bd540e13f9.png)
 
   
